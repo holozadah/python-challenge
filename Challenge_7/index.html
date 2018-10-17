@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    
+        <nav class="navbar">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <p>Latitude</p></a>
+                  </div>
+                  <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="max_temp.html">Max Temperature</a></li>
+                        <li><a href="humidity.html">Humidity</a></li>
+                        <li><a href="cloudiness.html">Cloudiness</a></li>
+                        <li><a href="wind_speed.html">Wind Speed</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="Comparisons.html">Comparisons</a></li>
+                    <li><a href="data.html">Data</a></li>
+                  </ul>
+                </div>
+              </nav>
+ 
+</header>
+
+        
+
+<body>
+        <div class="container">
+                        <div class="row row-grid">
+                            <div class="col-md-8">
+                                
+        
+                <div class="box box_1">
+                    
+                        <h1 class="box_1_header"> Summary: Latitude vs. X</h1>
+                    
+                        <img class= "img_1" src="Fig1_1.png" >
+                        <p class="paragraph">The purpose of this project was to analyze weather changes as you get
+                            closer to the equator. to accomplish this analysis, we first pulled 
+                            data from the OpenWeatherMap API to assemble a dataset on over 500 cities.    
+                        </p>
+                        <br>
+                        <p class="paragraph">
+                            After assembling the dataset, we used Matplotlib to plot various
+                            aspects of the water vs. latitude. Factors we looked at included:
+                            temperature, cloudiness, wind speed, and humidity. This site provides 
+                            the source data and visualizations created as part of the analysis, 
+                            as well as explanations and descriptions of any trends and correlations
+                            witenessed.
+                        </p>
+                      
+                      </div>
+        </div>
+
+        <div class="col-md-4">
+                <div class="box box_2">
+                    <h2 class="h2">Visualizations</h2>
+                    <hr>
+
+
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-3 col-md-6">
+                            <figure>
+                                <a href="temp.html">
+                                    <img class="side-viz" src="Fig1.png" alt="Latitude vs. Temperature">
+                                </a>
+                            </figure>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-3 col-md-6">
+                            <figure>
+                                <a href="humid.html">
+                                    <img class="side-viz" src="Fig2.png" alt="Latitude vs. Humidity">
+                                </a>
+                            </figure>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-3 col-md-6">
+                            <figure>
+                                <a href="cloud.html">
+                                    <img class="side-viz" src="Fig3.png" alt="Latitude vs. Cloudiness">
+                                </a>
+                            </figure>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-3 col-md-6">
+                            <figure>
+                                <a href="wind.html">
+                                    <img class="side-viz" src="Fig4.png" alt="Latitude vs. Wind Speed">
+                                </a>
+                            </figure>
+                        </div>
+  </div>
+</div>      
+</div>
+</div>
+</body>
+
+
+<footer class="first_footer">
+
+</footer>
+<footer class="Sec_footer">
+        <div class="copy_right">
+            <p>Copyright Coding Bootcamp 2017</p>
+        </div>
+    </footer>
+    
+    
+    
+</html>

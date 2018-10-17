@@ -1,0 +1,93 @@
+
+.navbar{
+    background-color: white;
+}
+.navbar-brand{
+position: absolute;
+display:block;
+background-color:rgb(84, 218, 200);
+width:200px;
+height:50px;
+font-family: 'Times New Roman', Times, serif;
+left:250px;
+
+}
+
+.navbar-brand p
+{
+color: white;
+font-weight: bold;
+font-size: 35px;
+text-align: center;
+
+}
+
+/* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
+ul{
+    position: absolute;
+    right:0;
+}
+
+
+body {
+    position: relative;
+    background:  rgb(216, 216, 216);
+    
+}
+
+
+
+.box_2{
+    position: relative;     
+    background: white;
+    height: 100%;
+    width: 100%;
+    padding: 50px;
+}
+.box_2_header{
+    
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color:rgb(84, 218, 200);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+
+
+.first_footer{
+    position: relative;
+    width:100%;
+    background-color: rgb(84, 218, 200);
+    height:5px;
+    margin: 250px 100px 0px 0px;
+   
+}
+
+.Sec_footer{
+    position: relative;
+    width:100%;
+    background-color: grey;
+    height:50px;
+    margin: 0px 0px 0px 0px;
+    
+
+}
+
+.copy_right{
+    color:white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 45px; 
+}
+

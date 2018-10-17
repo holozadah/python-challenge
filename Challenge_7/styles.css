@@ -1,0 +1,134 @@
+
+.navbar{
+    background-color: white;
+}
+.navbar-brand{
+position: absolute;
+display:block;
+background-color:rgb(84, 218, 200);
+width:200px;
+height:50px;
+font-family: 'Times New Roman', Times, serif;
+left:250px;
+
+}
+
+.navbar-brand p
+{
+color: white;
+font-weight: bold;
+font-size: 35px;
+text-align: center;
+
+}
+
+/* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
+ul{
+    position: absolute;
+    right:0;
+}
+
+
+body {
+    position: relative;
+    background:  rgb(216, 216, 216);
+    
+}
+
+
+.box{
+    color:white;
+    background: white;
+}
+
+.box_1{
+    
+    padding: 50px;
+    
+}
+
+.box_1_header{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color:rgb(84, 218, 200);
+}
+
+
+.img_1{
+    float:left;
+    height: 180px;
+    width: 200px;
+    
+}
+
+
+.box_2{
+    
+    padding: 50px;
+    
+}
+.h2{
+    
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color:rgb(84, 218, 200);
+}
+.side-viz {
+    padding:5px 5px 5px 5px;
+    width: 125%;
+    height: 100%;
+  }
+.paragraph{
+    margin: 10px;
+  font-size: 14px;
+  line-height: 1.8em;
+  color: slategray;
+}
+
+
+.first_footer{
+    position: relative;
+    width:100%;
+    background-color: rgb(84, 218, 200);
+    height:5px;
+    margin: 250px 100px 0px 0px;
+   
+}
+
+.Sec_footer{
+    position: relative;
+    width:100%;
+    background-color: grey;
+    height:50px;
+    margin: 0px 0px 0px 0px;
+    
+
+}
+
+.copy_right{
+    color:white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 45px; 
+}
+
+@media (min-width: 1200px) {
+    .row.row-grid [class*="col-lg-"] + [class*="col-lg-"] {
+        margin-top: 0;
+    }
+}
+@media (min-width: 992px) {
+    .row.row-grid [class*="col-md-"] + [class*="col-md-"] {
+        margin-top: 0;
+    }
+}
+@media (min-width: 768px) {
+    .row.row-grid [class*="col-sm-"] + [class*="col-sm-"] {
+        margin-top: 0;
+    }
+}
+@media (min-width: 768px) {
+  .row.row-grid [class*="col-xs-"] + [class*="col-xs-"] {
+      margin-top: 0;
+  }
+}
