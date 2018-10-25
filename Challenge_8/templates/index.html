@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mission to Mars</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/style.css">
+  
+</head>
+
+<body>
+  <div class="container-fluid">
+
+    <div class="jumbotron text-center">
+      <strong>
+          <h1>Mission to Mars</h1>
+      </strong>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+    </div>
+
+    <!-- Craigslist Listings -->
+
+    
+
+        <div class="row" id="Mars-listings">
+            <div class="col-xs-6 col-sm-3 col-md-12">
+                <strong>
+                    <h1>Latest Mars News</h1>
+                </strong>
+                <div class="panel panel-success">
+                    <div class="panel-heading"><strong><h3 class="heading">{{listings.news_title}}</h3></strong></div>
+                    <div class="panel-body"><p>{{listings.news_p}}</p></div>
+                  </div>
+                
+                
+            </div>
+          </div>
+
+
+
+    <div class="row" id="Mars-listings">
+        <div class="col-xs-3 col-sm-3 col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading"><strong>
+                    <h1 class= "mars_image">Featured Mars Image</h1>
+                </strong></div>
+                <div class="panel-body"><figure>
+                    <a href= {{listings.featured_image_url}}>
+                        <img class="side-viz" src= {{listings.featured_image_url}} alt="Latitude vs. Temperature">
+                    </a>
+                </figure>
+              </div>
+              </div>
+          
+          
+            
+        </div>
+
+        
+        <div class="col-xs-6 col-sm-3 col-md-6">
+    
+          <div class="panel panel-default">
+              <div class="panel-heading"><strong><h4>Current Weather on Mars</h4></strong></div>
+              <div class="panel-body">{{listings.mars_weather}}</div>
+            </div>
+
+            <div class="table">
+              <h3>Mars Facts</h3>
+            
+            <table border="1" class="table table-striped">
+                <thead>
+                  <tr style="text-align: right;">
+                    <th></th>
+                    <th>values</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>Equatorial Diameter:</th>
+                    <td>6,792 km\n</td>
+                  </tr>
+                  <tr>
+                    <th>Polar Diameter:</th>
+                    <td>6,752 km\n</td>
+                  </tr>
+                  <tr>
+                    <th>Mass:</th>
+                    <td>6.42 x 10^23 kg (10.7% Earth)</td>
+                  </tr>
+                  <tr>
+                    <th>Moons:</th>
+                    <td>2 (Phobos &amp; Deimos)</td>
+                  </tr>
+                  <tr>
+                    <th>Orbit Distance:</th>
+                    <td>227,943,824 km (1.52 AU)</td>
+                  </tr>
+                  <tr>
+                    <th>Orbit Period:</th>
+                    <td>687 days (1.9 years)\n</td>
+                  </tr>
+                  <tr>
+                    <th>Surface Temperature:</th>
+                    <td>-153 to 20 �C</td>
+                  </tr>
+                  <tr>
+                    <th>First Record:</th>
+                    <td>2nd millennium BC</td>
+                  </tr>
+                  <tr>
+                    <th>Recorded By:</th>
+                    <td>Egyptian astronomers</td>
+                  </tr>
+                </tbody>
+              </table>
+              </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" id="Mars-listings">
+        <div class="col-xs-6 col-sm-3 col-md-12">
+            <strong><h1>Mars Hemispheres</h1></strong>
+            {% for pic in listings.hemisphere_image_urls %}
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading"><strong><h3>{{pic.title}}</h4></strong></div>
+                    <div class="panel-body"><a href={{pic.img_url}}><img src= {{pic.img_url}} class="img-responsive" alt="Responsive image"></a></div>
+                  </div>
+            </div>
+            {% endfor %}
+        </div>
+      </div>
+
+  </div>
+</body>
+
+</html>
+

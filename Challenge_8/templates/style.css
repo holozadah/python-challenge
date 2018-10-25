@@ -1,0 +1,10 @@
+
+
+.weather_on_mars{
+    display: block;
+    border: 20px;
+    padding: 30px;
+    color:red;
+    background-color: black;
+    font-size: 10px;
+}
